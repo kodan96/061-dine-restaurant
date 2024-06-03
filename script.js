@@ -13,7 +13,7 @@ $(document).ready(() => {
         clearTimeout(timeout);
         timeout = setTimeout(() => {
             document.body.classList.add('hide-scrollbar');
-        }, 1000); // Adjust the delay time (in milliseconds) as needed
+        }, 1000); 
     });
 
 
