@@ -238,7 +238,7 @@ $(document).ready(() => {
                 
                 setTimeout(() => {
                     toggleReversed();
-                }, 100); 
+                }, 1000); 
             });
         });
     });
