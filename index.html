@@ -9,15 +9,19 @@
     <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
     <title>Dine | County Restaurant</title>
 </head>
-<body>
+<body class="hide-scrollbar">
     <header>
         <div class="header_text">
             <div class="overlay"></div>
-            <img src="images/logo.svg" alt="restaurant logo" class="logo">
-            <h1>Exquisite dining since 1989</h1>
-            <p>Experience our seasonal menu in beautiful country surroundings. Eat the freshest produce from the comfort of our farmhouse.</p>
-            <a href="booking.html" class="book">Book a Table</a>
+            <img src="images/logo.svg" alt="restaurant logo" class="logo initial">
+            <h1 class="initial">Exquisite dining since 1989</h1>
+            <p class="initial">Experience our seasonal menu in beautiful country surroundings. Eat the freshest produce from the comfort of our farmhouse.</p>
+            <a href="booking.html" class="book initial">Book a Table</a>
         </div>
+        <div class="overlay-opaque"></div>
+        <div class="overlay-opaque clay"></div>
+        <div class="overlay-opaque ebony"></div>
+        <div class="overlay-opaque mirage"></div>
     </header>
     <main>
         <section class="environment">
@@ -26,41 +30,43 @@
                 <div class="bg-pattern"><img src="images/patterns/pattern-curve-top-right.svg" alt=""></div>
                 <div class="environment_img">
                     <picture>
-                        <source media="(min-width: 1024px)" srcset="images/homepage/enjoyable-place-desktop@2x.jpg">
+                        <source media="(min-width: 1200px)" srcset="images/homepage/enjoyable-place-desktop@2x.jpg">
                         <source media="(min-width: 650px)" srcset="images/homepage/enjoyable-place-tablet@2x.jpg">
                         <img src="images/homepage/enjoyable-place-mobile@2x.jpg" alt="Our restaurant's surroundings" loading="lazy">
                     </picture>
+                    <div class="init"></div>
                 </div>
                 <div class="environment_text">
-                    <h2>Enjoyable place for all the family</h2>
-                    <p>Our relaxed surroundings make dining with us a great experience for everyone. We can even arrange a tour of the farm before your meal.</p>
+                    <h2 class="fade-up">Enjoyable place for all the family</h2>
+                    <p class="fade-up">Our relaxed surroundings make dining with us a great experience for everyone. We can even arrange a tour of the farm before your meal.</p>
                 </div>
             </div>
             <div class="environment_section">
                 <div class="environment_img">
                     <picture>
-                        <source media="(min-width: 1024px)" srcset="images/homepage/locally-sourced-desktop@2x.jpg">
+                        <source media="(min-width: 1200px)" srcset="images/homepage/locally-sourced-desktop@2x.jpg">
                         <source media="(min-width:650px)" srcset="images/homepage/locally-sourced-tablet@2x.jpg">
                         <img src="images/homepage/locally-sourced-mobile@2x.jpg" alt="Our meal served" loading="lazy">
                     </picture>
+                    <div class="img-overlay"></div>
                 </div>
                 <div class="environment_text">
-                    <h2>The most locally sourced food</h2>
-                    <p>All our ingredients come directly from our farm or local fishery. So you can be sure that you're eating the freshest, most sustainable food.</p>
+                    <h2 class="fade-up">The most locally sourced food</h2>
+                    <p class="fade-up">All our ingredients come directly from our farm or local fishery. So you can be sure that you're eating the freshest, most sustainable food.</p>
                     <div class="bg-pattern right">
                         <img src="images/patterns/pattern-curve-top-left.svg" alt="">
                     </div>
-                    <div class="lines"><img src="images/patterns/pattern-lines.svg" alt=""></div>
+                    <div class="lines"><img src="images/patterns/pattern-lines.svg" alt="" class="decoration"></div>
                 </div>
             </div>
         </section>
         <section class="highlights">
             <div class="highlights_header">
-                <h2>A few highlights from our menu</h2>
-                <p>We cater for all dietary requirements, but here's a glimpse at some of our diner's favourites. our menu is revamped every season.</p>
+                <h2 class="fade-up">A few highlights from our menu</h2>
+                <p class="fade-up">We cater for all dietary requirements, but here's a glimpse at some of our diner's favourites. our menu is revamped every season.</p>
             </div>
             <div class="highlight_content">
-                <div class="highlight_item">
+                <div class="highlight_item slide-in">
                     <div class="highlight_item--img">
                         <img src="images/homepage/salmon-mobile@2x.jpg" alt="Seared Salmon Fillet" loading="lazy">
                     </div>
@@ -71,9 +77,9 @@
                     </div>
                     
                 </div>
-                <hr>
+                <hr class="width">
               
-                <div class="highlight_item">
+                <div class="highlight_item slide-in">
                     <div class="highlight_item--img">
                         <img src="images/homepage/beef-mobile@2x.jpg" alt="Rosemary Filet Mignon" loading="lazy">
                     </div>
@@ -83,8 +89,8 @@
                         
                     </div>
                 </div>
-                <hr>
-                <div class="highlight_item">
+                <hr class="width">
+                <div class="highlight_item slide-in">
                     <div class="highlight_item--img">
                         <img src="images/homepage/chocolate-mobile@2x.jpg" alt="Summer Fruit Chocolate Mousse" loading="lazy">
                     </div>
@@ -96,39 +102,44 @@
             </div>
         </section>
         <section class="events">
+            <div class="bg-pattern"><img src="images/patterns/pattern-curve-top-right.svg" alt=""></div>
             <div class="events_img">
                 <picture>
-                    <source media="(min-width: 1024px)" srcset="images/homepage/family-gathering-desktop@2x.jpg">
+                    <source media="(min-width: 1200px)" srcset="images/homepage/family-gathering-desktop@2x.jpg">
                     <source media="(min-width: 650px)" srcset="images/homepage/family-gathering-tablet@2x.jpg">
                     <img src="images/homepage/family-gathering-mobile@2x.jpg" alt="" class="display">
+                    <div class="img-overlay"></div>
+                    <div class="eventimg rightheight"></div>
+                    <div class="eventimg leftwidth"></div>
                 </picture>
                 <picture>
-                    <source media="(min-width: 1024px)" srcset="images/homepage/family-gathering-desktop@2x.jpg">
+                    <source media="(min-width: 1200px)" srcset="images/homepage/family-gathering-desktop@2x.jpg">
                     <source media="(min-width: 650px)" srcset="images/homepage/family-gathering-tablet@2x.jpg">
-                    <img src="images/homepage/family-gathering-mobile@2x.jpg" alt="">
+                    <img src="images/homepage/family-gathering-mobile@2x.jpg" alt="" class="slide">
                 </picture>
                 <picture>
-                    <source media="(min-width: 1024px)" srcset="images/homepage/special-events-desktop@2x.jpg">
+                    <source media="(min-width: 1200px)" srcset="images/homepage/special-events-desktop@2x.jpg">
                     <source media="(min-width: 650px)" srcset="images/homepage/special-events-tablet@2x.jpg">
-                    <img src="images/homepage/special-events-mobile@2x.jpg" alt="">
+                    <img src="images/homepage/special-events-mobile@2x.jpg" alt="" class="slide">
                 </picture>
                 <picture>
-                    <source media="(min-width: 1024px)" srcset="images/homepage/social-events-desktop@2x.jpg">
+                    <source media="(min-width: 1200px)" srcset="images/homepage/social-events-desktop@2x.jpg">
                     <source media="(min-width: 650px)" srcset="images/homepage/social-events-tablet@2x.jpg">
-                    <img src="images/homepage/social-events-mobile@2x.jpg" alt="">
+                    <img src="images/homepage/social-events-mobile@2x.jpg" alt="" class="slide">
                 </picture>
             </div>
-            <div class="bg-pattern"><img src="images/patterns/pattern-curve-top-right.svg" alt=""></div>
-            <div class="lines"><img src="images/patterns/pattern-lines.svg" alt=""></div>
+            
+            <div class="lines"><img src="images/patterns/pattern-lines.svg" alt="" class="decoration"></div>
+            <div>
             <div class="events_text">
                 <div class="events_text--toggles">
-                    <a href="#" class="toggle active">Family Gathering</a><br>
-                    <a href="#" class="toggle">Special Events</a><br>
-                    <a href="#" class="toggle">Social Events</a>
+                    <a href="#" class="fade-up toggle active">Family Gathering</a><br>
+                    <a href="#" class="fade-up toggle">Special Events</a><br>
+                    <a href="#" class="fade-up toggle ">Social Events</a>
                 </div>
                 <div class="events_section">
-                    <h2>Family Gathering</h2>
-                    <p>We love catering for entire families. So please bring everyone along for a special meal with your loved ones. We'll provide a memorable experience for all.</p>
+                    <h2 class="fade-up">Family Gathering</h2>
+                    <p class="fade-up">We love catering for entire families. So please bring everyone along for a special meal with your loved ones. We'll provide a memorable experience for all.</p>
                 </div>
                 <div class="events_section">
                     <h2>Special Events</h2>
@@ -139,14 +150,17 @@
                     <p>Are you looking to have a larger social event? No problem! We're more than happy to cater for big parties. We'll work with you to make your event a hit with everyone.</p>
                 </div>
             </div>
-            <a href="booking.html" class="book">Book a Table</a>
+            <a href="booking.html" class="book fade-up">Book a Table</a>
+        </div>
         </section>
         <section class="reservation">
             <h2>Ready to make a reservation?</h2>
             <a href="booking.html" class="book">Book a Table</a>
+            <div class="footer_overlay"></div>
         </section>
     </main>
     <footer>
+        <div class="footer_overlay dark"></div>
         <div class="footer_logo">
             <img src="images/logo.svg" alt="restaurant logo" class="logo">
         </div>
@@ -159,7 +173,10 @@
             </div>
         </div
     </footer>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', (event) => {
             // Show only the first events_section

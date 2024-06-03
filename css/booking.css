@@ -1,0 +1,272 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap");
+::-webkit-scrollbar {
+  width: 0.5rem;
+  background-color: rgba(92, 103, 121, 0.1);
+  position: absolute;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgba(36, 43, 55, 0.2);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(23, 25, 43, 0.6);
+  border-radius: 10px;
+  position: absolute;
+}
+
+body .hide-scrollbar {
+  scrollbar-width: none; /* Firefox */
+}
+
+/* For Chrome, Edge, and Safari */
+body.hide-scrollbar::-webkit-scrollbar-thumb {
+  display: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "League Spartan", sans-serif;
+}
+
+body {
+  text-align: center;
+  overflow-x: hidden;
+}
+
+img {
+  max-inline-size: 100%;
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+p {
+  line-height: 1.625;
+}
+
+h2 {
+  font-size: 2rem;
+  line-height: 1.25;
+  font-weight: 700;
+  letter-spacing: -0.4px;
+  color: #242b37;
+}
+
+header {
+  padding: 3.5rem 1.5rem 14.25rem;
+  background-image: url(../images/booking/hero-bg-mobile.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 1;
+  position: relative;
+}
+header .logo {
+  margin-bottom: 2.75rem;
+  height: 32px;
+}
+header * {
+  color: #fff;
+}
+header h1 {
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 1.25;
+  letter-spacing: -0.4px;
+  margin-bottom: 0.75rem;
+}
+header p {
+  line-height: 1.625;
+  margin-bottom: 1.25rem;
+}
+header .book {
+  display: inline-block;
+  padding: 1.5rem 3rem;
+  outline: 1px solid #fff;
+  letter-spacing: 2.5px;
+}
+
+main {
+  padding: 1.5rem;
+}
+
+form, fieldset {
+  border: none;
+  position: relative;
+}
+
+.form-container {
+  z-index: 10;
+  max-width: 540px;
+  margin-inline: auto;
+}
+
+form {
+  z-index: 10;
+  padding: 2rem;
+  -webkit-box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+          box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+  position: relative;
+}
+form label {
+  display: block;
+  text-align: start;
+}
+form label[for=name],
+form label[for=email] {
+  display: none;
+}
+form input {
+  border: none;
+  border-bottom: 2px solid #5c6779;
+  width: 100%;
+  padding: 1rem;
+  padding-right: 0;
+  margin-bottom: 2rem;
+  font-size: 1.25rem;
+  font-family: inherit;
+}
+form input[name=date], form input[name=hrs], form input[name=mins], form input[name=am] {
+  width: 25%;
+}
+form input[name=date]:not(:last-child), form input[name=time]:not(:last-child) {
+  margin-right: 1rem;
+}
+form input:focus {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #000;
+}
+form .wrapper {
+  position: relative;
+}
+form .error {
+  position: absolute;
+  left: 0.5rem;
+  bottom: 0.75rem;
+  font-size: 0.75rem;
+  color: red;
+  display: none;
+}
+form legend {
+  font-size: 1.25rem;
+}
+form .guests-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 2px solid #5c6779;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+form .guests-wrapper p {
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+form a {
+  display: block;
+  padding: 1.5rem 2.33rem;
+  color: #fff;
+  background-color: #111111;
+  letter-spacing: 2.5px;
+}
+
+footer {
+  background-color: #111111;
+  padding-block: 5rem;
+  position: relative;
+}
+footer p {
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 400;
+  letter-spacing: 2px;
+  font-size: 0.875rem;
+  line-height: 2;
+}
+footer .logo {
+  margin-bottom: 2.62rem;
+  height: 40px;
+}
+footer div > p:nth-of-type(1) {
+  margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 650px) {
+  header {
+    padding: 3.5rem 2.5rem 16.75rem;
+    background-image: url(../images/booking/hero-bg-tablet@2x.jpg);
+  }
+  header .logo {
+    float: left;
+  }
+  header h1 {
+    margin-top: 10.37rem;
+    font-size: 3rem;
+    line-height: 1.33;
+    margin-bottom: 0.75rem;
+  }
+  header p {
+    font-size: 1.25rem;
+    line-height: 1.5;
+  }
+  header .book {
+    display: none;
+  }
+  footer {
+    padding: 4rem 2.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 8.125rem;
+    text-align: start;
+  }
+}
+@media screen and (min-width: 1200px) {
+  header {
+    padding: 4.06rem 10.31rem 9.625rem;
+    text-align: start;
+    background-image: url(../images/booking/hero-bg-desktop@2x.jpg);
+    z-index: -100;
+  }
+  header h1 {
+    font-size: 5rem;
+    line-height: 1;
+    margin-bottom: 1.1rem;
+  }
+  header p {
+    max-width: 38ch;
+  }
+  main {
+    padding-inline: 0;
+  }
+  .form-container {
+    margin-inline: 0;
+    padding-left: 10.31rem;
+  }
+  .form-container form {
+    width: 600px;
+  }
+  footer {
+    padding-inline: 10.31rem;
+    gap: 12rem;
+  }
+  .footer_wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 12rem;
+  }
+}

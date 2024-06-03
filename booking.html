@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/booking.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+    <title>Dine | Reservation Page</title>
+</head>
+<body>
+   <header>
+    <img src="images/logo.svg" alt="Restaurant Logo" class="logo">
+    <h1>Reservations</h1>
+    <p>We can't wait to host you. If you have any special requirements please feel free to call on the phone number below. We'll be happy to accommodate you.</p>
+    <a href="#" class="book">Reserve Place</a>
+   </header> 
+   <main>
+    <div class="form-container">
+        <form action="">
+            <label for="name" aria-label="Enter your name">Name</label>
+            <div class="wrapper">
+                <input type="text" placeholder="Name" id="name">
+                <p class="name_error error">This field is required.</p>
+            </div>
+            <label for="email" aria-label="Enter your email address">Email</label>
+            <div class="wrapper">
+                <input type="email" name="email" id="email" placeholder="Email">
+                <p class="email_error error">This field is required.</p>
+            </div>
+
+            <fieldset>
+                <label for="year">Pick a date</label>
+                
+                <input type="number" name="date" id="month" placeholder="MM" max="12" class="date">
+        
+            
+                <input type="number" name="date" id="day" placeholder="DD" max="31" class="date">
+            
+            
+                <input type="number" name="date" id="year" placeholder="YYYY" class="date">
+
+                
+
+                <p class="date_error error">This field is required.</p>
+                
+            </fieldset>
+            <fieldset id="time">
+                <label for="time">Pick a time</label>
+                <input type="number" name="hrs" id="hrs" placeholder="09">
+                <input type="number" name="mins" id="mins" placeholder="00">
+                <input type="text" value="AM" id="time" name="am">
+                <p class="time_error error">This field is required</p>
+            </fieldset>
+            <div class="guests-wrapper">
+                <img src="images/icons/icon-minus.svg" alt="">
+                <p class="people"><span class="number-of-ppl">4</span> people</p>
+                <img src="images/icons/icon-plus.svg" alt="">
+            </div>
+            <a href="#" class="submit">Make Reservation</a>
+        </form>
+    </div>
+   </main>
+   <footer>
+       
+        <div class="footer_logo">
+            <img src="images/logo.svg" alt="restaurant logo" class="logo">
+        </div>
+        <div class="footer_wrap">
+            <div>
+                <p>Marthwaite, Sedbergh <br>Cumbria <br> +00 44 123 4567</p>
+            </div>
+            <div>
+                <p>Open Times: <br> Mon - Fri: 09:00 AM - 10:00 PM <br> Sat - Sun: 09:00 AM - 11:30 PM</p>
+            </div>
+        </div
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="booking.js"></script>
+</body>
+</html>
