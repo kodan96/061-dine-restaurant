@@ -227,12 +227,18 @@ $(document).ready(() => {
 
     
     
+    
     toggles.forEach((toggle, i) => {
         toggle.addEventListener('click', (e) => {
             e.preventDefault();
+            // First, run the toggleAnimation
             toggleAnimation(() => {
+                // After the toggleAnimation completes, handle the click to change the image
                 handleClick(i);
-                toggleReversed();
+                // Then start the toggleReversed animation after a short delay to ensure the image is updated
+                setTimeout(() => {
+                    toggleReversed();
+                }, 100); // Adjust the delay as needed to ensure the image updates correctly
             });
         });
     });
