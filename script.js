@@ -207,16 +207,16 @@ $(document).ready(() => {
             toggle.classList.remove('active');
         });
 
-        // Add the active class to the clicked element
+        
         toggles[i].classList.add('active');
 
-        // Get the new src and srcset from the selected slide's picture element
+      
         const selectedPicture = slides[i].closest('picture');
         const newSrc = $(selectedPicture).find('img').attr('src');
         const newSrcset1200 = $(selectedPicture).find('source[media="(min-width: 1200px)"]').attr('srcset');
         const newSrcset650 = $(selectedPicture).find('source[media="(min-width: 650px)"]').attr('srcset');
 
-        // Update the src and srcset attributes of the display element's picture element
+        
         $(displayPicture).find('img').attr('src', newSrc + '?' + new Date().getTime());
         $(displayPicture).find('source[media="(min-width: 1200px)"]').attr('srcset', newSrcset1200 + '?' + new Date().getTime());
         $(displayPicture).find('source[media="(min-width: 650px)"]').attr('srcset', newSrcset650 + '?' + new Date().getTime());
@@ -233,12 +233,12 @@ $(document).ready(() => {
             e.preventDefault();
             // First, run the toggleAnimation
             toggleAnimation(() => {
-                // After the toggleAnimation completes, handle the click to change the image
+               
                 handleClick(i);
-                // Then start the toggleReversed animation after a short delay to ensure the image is updated
+                
                 setTimeout(() => {
                     toggleReversed();
-                }, 100); // Adjust the delay as needed to ensure the image updates correctly
+                }, 100); 
             });
         });
     });
