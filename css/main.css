@@ -116,10 +116,6 @@ header .overlay {
   background-color: #111111;
 }
 
-.footer_overlay {
-  display: none;
-}
-
 .book {
   padding: 1.5rem 3.375rem;
   border: 2px solid #fff;
