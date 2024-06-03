@@ -33,81 +33,92 @@ h2 {
   color: #242b37;
 }
 
+/*
 .overlay-opaque {
-  width: 100%;
-  position: absolute;
-  height: 100vh;
-  top: 0;
-  right: 0;
-  background-color: #fff;
-  z-index: 10;
-}
-.overlay-opaque.ebony {
-  background-color: #242b37;
-  z-index: 8;
-}
-.overlay-opaque.clay {
-  background-color: #5c6779;
-  z-index: 9;
-}
-.overlay-opaque.mirage {
-  background-color: #17192b;
-  z-index: 3;
+    width: 100%;
+    position: absolute;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    background-color: #fff;
+    z-index: 10;
+
+    &.ebony {
+        background-color: $ebony-clay;
+        z-index: 8;
+    }
+
+    &.clay {
+        background-color: $shuttle-gray;
+        z-index: 9;
+    }
+
+    &.mirage {
+        background-color: $mirage;
+        z-index: 3;
+    }
 }
 
 .initial {
-  -webkit-transform: translateY(100%);
-          transform: translateY(100%);
-  opacity: 0;
+    transform: translateY(100%);
+    opacity: 0;
 }
 
 .img-overlay,
 .init {
-  position: absolute;
-  bottom: -0.1rem;
-  left: -0.1rem;
-  height: 102%;
-  width: 102%;
-  background-color: #fff;
+    position: absolute;
+    bottom: -0.1rem;
+    left: -0.1rem;
+    height: 102%;
+    width: 102%;
+    background-color: #fff;
 }
 
 .decoration {
-  width: 0;
-  z-index: 999;
+    width: 0;
+    z-index: 999;
 }
 
+
 .fade-up {
-  -webkit-transform: translateY(100%);
-          transform: translateY(100%);
-  opacity: 0;
+    transform: translateY(100%);
+    opacity: 0;
 }
 
 .slide-in {
-  -webkit-transform: translateX(120%);
-          transform: translateX(120%);
-  opacity: 0;
+    transform: translateX(120%);
+    opacity: 0;
 }
 
 .width {
-  width: 0;
+    width: 0;
 }
 
 hr {
-  -webkit-transform-origin: center;
-          transform-origin: center;
+    transform-origin: center;
+
+}
+
+header .overlay {
+    transform: translateX(100%);
 }
 
 .footer_overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 10;
-  background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background-color: #fff;
+
+    &.dark {
+        background-color: $cod-gray;
+    }
 }
-.footer_overlay.dark {
-  background-color: #111111;
+*/
+.footer_overlay {
+  display: none;
 }
 
 .book {
@@ -150,8 +161,6 @@ header .overlay {
   top: 0;
   left: 0;
   background-color: rgba(255, 255, 255, 0.02);
-  -webkit-transform: translateX(100%);
-          transform: translateX(100%);
 }
 header h1 {
   font-size: 2rem;
